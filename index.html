@@ -1,0 +1,88 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>UI</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div id="first">
+            <div class="item">
+                <span>1&#8594;</span>
+                <span>First, give your persona a name.</span>
+                <p>Humanise your persona with a name like Marketing Mary or Human Resources Harry.</p>
+                <div class="text-input">
+                    <input type="text" class="textbox" autocomplete="off">
+                </div>
+                <div class="button">
+                    <a onclick="initScroll('second');return false;" href="#">OK &#10004;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <a onclick="initScroll('first'); return false;" href="#">GoTo first Question</a> -->
+        <div id="second">
+            <div class="item">
+                <span>2&#8594;</span>
+                <span>Give your date of birth.</span>
+                <p></p>
+                <div class="text-input">
+                    <input type="date" id="myDate" value="2014-02-09" autocomplete="off">
+                </div>
+                <div class="button">
+                    <a onclick="initScroll('third');return false;" href="#">OK &#10004;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <a onclick="initScroll('second'); return false;" href="#">GoTo second Question</a> -->
+        <div id="third">
+            <div class="item">
+                <span>3&#8594;</span>
+                <span>Select your Gender.</span>
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male" checked>
+                    <br>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </div>
+                <div class="button">
+                    <a onclick="initScroll('fourth');return false;" href="#">OK &#10004;</a>
+                </div>
+            </div>
+        </div>
+        <!-- <a onclick="initScroll('third'); return false;" href="#">GoTo third Question</a> -->
+        <div id="fourth">
+            <div class="item">
+                <span>4&#8594;</span>
+                <span>Enter your experience.</span>
+                <div>
+                    <label for="one">1 Year</label>
+                    <input type="checkbox" name="experience1" id="one" value="1" checked>
+                    <br>
+                    <label for="two">2 Year</label>
+                    <input type="checkbox" name="experience2" id="two" value="2">
+                    <br>
+                    <label for="three">3 Year</label>
+                    <input type="checkbox" name="experience3" id="three" value="3">
+                    <br>
+                    <label for="foue">>3 Year</label>
+                    <input type="checkbox" name="experience3" id="foue" value="4">
+                </div>
+                <div class="button">
+                    <a onclick="initScroll('fourth');return false;" href="#">OK &#10004;</a>
+                </div>
+            </div>
+        </div>
+        <!-- <a onclick="initScroll('fourth'); return false;" href="#">GoTo fourth Question</a> -->
+    </div>
+</body>
+
+</html>

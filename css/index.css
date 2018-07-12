@@ -1,0 +1,59 @@
+.main-container{
+    
+    background-image: url("../image/persona.jpeg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+a{
+    background:black;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.item{
+    width: auto;
+    padding: 15% 0 0 25%;
+}
+.item p{
+    font-size: 23px;
+}
+.text-input{
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 160%;
+    text-align: left;
+    margin-top: -16px;
+}
+.textbox{
+    border: none;
+    width: 50%;
+    line-height: 40px;
+}
+.button{
+    height: 50px;
+
+}
+
+#myDate{
+    border: none;
+    width: 20%;
+    line-height: 40px;
+}
+
+#first{ padding-top: 20px; font-size: 40px;}
+#second{ padding-top: 20px; font-size: 40px;}
+#third{ padding-top: 20px; font-size: 40px;}
+#fourth{ padding-top: 20px; font-size: 40px;}
+
+#first{background: none;}
+#second{background: none;}
+#third{background: none;}
+#fourth{background: none;}
+
