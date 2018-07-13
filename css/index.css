@@ -8,52 +8,63 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    opacity: 0.8;
 }
 
-a{
-    background:black;
-    padding: 10px 20px;
-    color: white;
-    font-size: 20px;
-}
+a{ background:black; padding: 10px 20px; color: white; font-size: 20px;}
 
-.item{
-    width: auto;
-    padding: 15% 0 0 25%;
-}
-.item p{
-    font-size: 23px;
-}
-.text-input{
-    font-size: 16px;
-    margin-bottom: 30px;
-    line-height: 160%;
-    text-align: left;
-    margin-top: -16px;
-}
-.textbox{
-    border: none;
-    width: 50%;
-    line-height: 40px;
-}
-.button{
-    height: 50px;
+.item{ width: auto; padding: 15% 0 0 25%;}
 
-}
+.item p{ font-size: 23px; font-style: italic;}
 
-#myDate{
-    border: none;
-    width: 20%;
-    line-height: 40px;
-}
+.text-input{ font-size: 16px; margin-bottom: 30px; line-height: 160%; text-align: left; margin-top: -16px;}
+
+.textbox{ border: none; width: 50%; line-height: 40px;}
+
+.button{ height: 50px;}
+
+#myDate{ border: none; width: 20%; line-height: 40px;}
 
 #first{ padding-top: 20px; font-size: 40px;}
 #second{ padding-top: 20px; font-size: 40px;}
 #third{ padding-top: 20px; font-size: 40px;}
 #fourth{ padding-top: 20px; font-size: 40px;}
+#fifth{ padding-top: 20px; font-size: 40px;}
+#sixth{ padding-top: 20px; font-size: 40px;}
+#seventh{ padding-top: 20px; font-size: 40px;}
+#eightth{ padding-top: 20px; font-size: 40px;}
+#nineth{ padding-top: 20px; font-size: 40px;}
+#tenth{ padding-top: 20px; font-size: 40px;}
 
 #first{background: none;}
 #second{background: none;}
 #third{background: none;}
 #fourth{background: none;}
+#fifth{background: none;}
+#sixth{background: none;}
+#seventh{background: none;}
+#eightth{background: none;}
+#nineth{background: none;}
+#tenth{background: none;}
 
+.experience{ margin: 2% 0 2% 0;}
+.experience label{ font-size: 24px; font-style: normal;}
+
+.gender{ margin: 2% 0 2% 0;}
+.gender label{ font-size: 24px; font-style: normal;}
+.gender #other{ width: 16%; height: 4%; display: none}
+
+#email{ width: 50%; height: 5%; margin: 2% 0 2% 0;}
+
+#job-title{width: 30%; height: 5%; margin: 2% 0 2% 0;}
+
+#skills{ width: 40%; height: 5%; margin: 2% 0 2% 0;}
+
+#sports{ width: 30%; height: 5%; margin: 2% 0 2% 0;}
+
+#keep-go{width: 80%; height: auto; margin: -3% 0 2% 5%; font-size: 36px; }
+#keep{margin: 2% 0 2% 0;}
+
+#report{ width: 30%; height: 5%; margin: 2% 0 2% 0;}
+
+/* #first{ margin: 0 0 0 0;} */

@@ -7,6 +7,7 @@
     <title>UI</title>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/index.js"></script>
 </head>
 
@@ -18,9 +19,9 @@
                 <span>First, give your persona a name.</span>
                 <p>Humanise your persona with a name like Marketing Mary or Human Resources Harry.</p>
                 <div class="text-input">
-                    <input type="text" class="textbox" autocomplete="off">
+                    <input type="text" class="textbox" id="textbox-name" autocomplete="off" />
                 </div>
-                <div class="button">
+                <div class="button" id="btnSubmit">
                     <a onclick="initScroll('second');return false;" href="#">OK &#10004;</a>
                 </div>
             </div>
@@ -33,9 +34,9 @@
                 <span>Give your date of birth.</span>
                 <p></p>
                 <div class="text-input">
-                    <input type="date" id="myDate" value="2014-02-09" autocomplete="off">
+                    <input type="date" id="myDate" value="dd/mm/yy" autocomplete="off">
                 </div>
-                <div class="button">
+                <div class="button" id="btnSubmitBirth">
                     <a onclick="initScroll('third');return false;" href="#">OK &#10004;</a>
                 </div>
             </div>
@@ -46,12 +47,16 @@
             <div class="item">
                 <span>3&#8594;</span>
                 <span>Select your Gender.</span>
-                <div>
-                    <label for="male">Male</label>
+                <div class="gender">
+                    <label for="male" id="male-gender">Male</label>
                     <input type="radio" name="gender" id="male" value="male" checked>
-                    <br>
-                    <label for="female">Female</label>
+
+                    <label for="female" id="female-gender">Female</label>
                     <input type="radio" name="gender" id="female" value="female">
+
+                    <label for="other1" id="other-gender">Other</label>
+                    <input type="radio" name="gender" id="other1" value="other">
+                    <input type="textbox" name="gender" id="other" placeholder="Type your gender">
                 </div>
                 <div class="button">
                     <a onclick="initScroll('fourth');return false;" href="#">OK &#10004;</a>
@@ -63,25 +68,106 @@
             <div class="item">
                 <span>4&#8594;</span>
                 <span>Enter your experience.</span>
-                <div>
-                    <label for="one">1 Year</label>
+                <div class="experience">
                     <input type="checkbox" name="experience1" id="one" value="1" checked>
-                    <br>
-                    <label for="two">2 Year</label>
+                    <label for="one">One year</label>
+
                     <input type="checkbox" name="experience2" id="two" value="2">
-                    <br>
-                    <label for="three">3 Year</label>
+                    <label for="two">Two year</label>
+
                     <input type="checkbox" name="experience3" id="three" value="3">
-                    <br>
-                    <label for="foue">>3 Year</label>
-                    <input type="checkbox" name="experience3" id="foue" value="4">
+                    <label for="three">Three year</label>
+
+                    <input type="checkbox" name="experience3" id="four" value="4">
+                    <label for="four">>Three year</label>
+
                 </div>
                 <div class="button">
-                    <a onclick="initScroll('fourth');return false;" href="#">OK &#10004;</a>
+                    <a onclick="initScroll('fifth');return false;" href="#">OK &#10004;</a>
                 </div>
             </div>
         </div>
         <!-- <a onclick="initScroll('fourth'); return false;" href="#">GoTo fourth Question</a> -->
+
+        <div id="fifth">
+            <div class="item">
+                <span>5&#8594;</span>
+                <span>Enter your email address.</span>
+                <div class="email-id">
+                    <input type="text" id="email" placeholder="abc@gmail.com">
+                </div>
+                <div class="button" id="btnValidate">
+                    <a onclick="initScroll('sixth');return false;" href="#">OK &#10004;</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="sixth">
+            <div class="item">
+                <span>6&#8594;</span>
+                <span>Enter your job title.</span>
+                <div class="job-title">
+                    <input type="text" id="job-title" placeholder="Enter your job title">
+                </div>
+                <div class="button" id="checkBtn">
+                    <a onclick="initScroll('seventh');return false;" href="#">OK &#10004;</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="seventh">
+            <div class="item">
+                <span>7&#8594;</span>
+                <span>Enter your skills.</span>
+                <div class="skills">
+                    <input type="text" id="skills" placeholder="Enter your skills">
+                </div>
+                <div class="button" id="checkBtn2">
+                    <a onclick="initScroll('eightth');return false;" href="#">OK &#10004;</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="eightth">
+            <div class="item">
+                <span>8&#8594;</span>
+                <span>Enter your favourite sports.</span>
+                <div class="sports">
+                    <input type="text" id="sports" placeholder="Enter your favourite sports">
+
+                </div>
+                <div class="button" id="checkBtn3">
+                    <a onclick="initScroll('nineth');return false;" href="#">OK &#10004;</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="nineth">
+            <div class="item">
+                <span>9&#8594;</span>
+                <div id="keep-go">
+                    <span>Don't worry if you don't have all the information at hand to answer every question. We'll send you your
+                        answers in an editable Word doc via email to complete later.</span>
+                </div>
+                <div class="button" id="keep">
+                    <a onclick="initScroll('tenth');return false;" href="#">Let's Keep going</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="tenth">
+            <div class="item">
+                <span>10&#8594;</span>
+                <span>Who does report you?</span>
+                <div>
+                    <input type="text" id="report" placeholder="Enter name.">
+                </div>
+                <div class="button" id="checkBtn4">
+                    <a onclick="initScroll('tenth');return false;" href="#">OK &#10004;</a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
