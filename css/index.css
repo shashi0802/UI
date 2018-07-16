@@ -1,3 +1,21 @@
+/* .active{
+    opacity: 1;
+} */
+/* .notactive{
+    opacity: 0.4;
+} */
+/* section {
+    opacity: 0;
+    transform: translate(0, 20px); 
+    transition: all 1s;
+  }
+  
+  section.visible {
+    opacity: 1;
+    transform: translate(0, 0); 
+  } */
+  /* here above code is for scrolling */
+
 .main-container{
     
     background-image: url("../image/persona.jpeg");
@@ -26,15 +44,15 @@ a{ background:black; padding: 10px 20px; color: white; font-size: 20px;}
 #myDate{ border: none; width: 20%; line-height: 40px;}
 
 #first{ padding-top: 20px; font-size: 40px;}
-#second{ padding-top: 20px; font-size: 40px;}
-#third{ padding-top: 20px; font-size: 40px;}
-#fourth{ padding-top: 20px; font-size: 40px;}
-#fifth{ padding-top: 20px; font-size: 40px;}
-#sixth{ padding-top: 20px; font-size: 40px;}
-#seventh{ padding-top: 20px; font-size: 40px;}
-#eightth{ padding-top: 20px; font-size: 40px;}
-#nineth{ padding-top: 20px; font-size: 40px;}
-#tenth{ padding-top: 20px; font-size: 40px;}
+#second, #third, #fourth, #fifth, #sixth, #seventh, #eightth, #nineth , #tenth{ padding-top: 20px; font-size: 40px; }
+/* #third{ padding-top: 20px; font-size: 40px; }
+#fourth{ padding-top: 20px; font-size: 40px; }
+#fifth{ padding-top: 20px; font-size: 40px; }
+#sixth{ padding-top: 20px; font-size: 40px; }
+#seventh{ padding-top: 20px; font-size: 40px; }
+#eightth{ padding-top: 20px; font-size: 40px; }
+#nineth{ padding-top: 20px; font-size: 40px; }
+#tenth{ padding-top: 20px; font-size: 40px; } */
 
 #first{background: none;}
 #second{background: none;}
@@ -67,4 +85,4 @@ a{ background:black; padding: 10px 20px; color: white; font-size: 20px;}
 
 #report{ width: 30%; height: 5%; margin: 2% 0 2% 0;}
 
-/* #first{ margin: 0 0 0 0;} */
+  
